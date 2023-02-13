@@ -10,13 +10,15 @@
 
     <EditText
         android:id="@+id/cost_of_service"
-        android:hint="@string/cost_of_service"
-        android:layout_height="wrap_content"
         android:layout_width="160dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:hint="@string/cost_of_service"
         android:inputType="numberDecimal"
-        android:autofillHints="" />
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/service_question"
@@ -58,10 +60,11 @@
         android:id="@+id/round_up_switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:text="@string/round_up_tip"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tip_options"
         app:layout_constraintTop_toBottomOf="@+id/tip_options"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/round_up_tip"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
     
     <Button
